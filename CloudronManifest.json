@@ -1,0 +1,28 @@
+{
+  "id": "org.droneci.cloudronapp",
+  "title": "Drone CI",
+  "author": "Harness",
+  "description": "file://DESCRIPTION.md",
+  "tagline": "Self-service Continutous Integration platform for busy development teams.",
+  "version": "0.1.0",
+  "healthCheckPath": "/",
+  "httpPort": 8080,
+  "manifestVersion": 2,
+  "website": "https://drone.io/",
+  "contactEmail": "atridad@icloud.com",
+  "icon": "logo.png",
+  "memoryLimit": 262144000,
+  "addons": {
+    "localstorage": {},
+    "postgresql": {}
+  },
+  "tags": [ "golang", "ci" ],
+  "changelog": "file://CHANGELOG",
+  "postInstallMessage": "file://POSTINSTALL.md",
+  "mediaLinks": [
+  ],
+  "minBoxVersion": "5.3.0",
+  "forumUrl": "https://forum.cloudron.io/category/102/drone",
+  "documentationUrl": "https://docs.cloudron.io/apps/drone/"
+
+}
