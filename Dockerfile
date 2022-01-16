@@ -9,11 +9,15 @@ RUN apt-get -y update && \
     apt -y install ffmpeg x264 x265 && \
     rm -rf /var/cache/apt /var/lib/apt/lists
 
-ENV VERSION=2.5.0
+ENV VERSION=2.8.0
+
+RUN wget "https://github.com/harness/drone/archive/refs/tags/v${VERSION}.zip" -O /app/code/drone.zip && \
+unzip /app/code/drone.zip -d /app/code
+
+RUN cd drone-${VERSION} && go build -o /app/code/drone-server github.com/drone/drone/cmd/drone-server
 
 # copy start script
 ADD start.sh /app/code/
-ADD drone-server /app/code/
 RUN chmod +x /app/code/drone-server
 ADD .env /app/data/
 RUN ln -s /app/data/.env /app/code/.env
