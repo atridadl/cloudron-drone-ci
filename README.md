@@ -7,7 +7,7 @@
 
 2) Install docker using this guide: https://docs.docker.com/engine/install/
 
-3) Download the latest release of this package
+3) Download the latest release of this package from here: https://git.atridad.dev/atridad/cloudron-drone-ci/releases
 
 4) Open a terminal window and navigate to the directory with the code you just downloaded
 
