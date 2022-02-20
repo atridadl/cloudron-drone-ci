@@ -19,6 +19,7 @@ RUN cd drone-${VERSION} && go build -o /app/code/drone-server github.com/drone/d
 # copy start script
 ADD start.sh /app/code/
 RUN chmod +x /app/code/drone-server
+RUN chmod +x /app/code/start.sh
 ADD .env /app/data/
 RUN ln -s /app/data/.env /app/code/.env
 
