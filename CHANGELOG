@@ -3,3 +3,6 @@
 
 [1.0.0]
 * Automated the build from source (no more pushing binaries to the repo)
+
+[1.1.0]
+* Updated to Drone 2.11.1

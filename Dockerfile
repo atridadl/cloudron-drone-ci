@@ -9,7 +9,7 @@ RUN apt-get -y update && \
     apt -y install ffmpeg x264 x265 && \
     rm -rf /var/cache/apt /var/lib/apt/lists
 
-ENV VERSION=2.8.0
+ENV VERSION=2.11.1
 
 RUN wget "https://github.com/harness/drone/archive/refs/tags/v${VERSION}.zip" -O /app/code/drone.zip && \
 unzip /app/code/drone.zip -d /app/code

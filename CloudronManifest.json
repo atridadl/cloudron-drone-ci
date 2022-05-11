@@ -4,7 +4,7 @@
   "author": "Harness",
   "description": "file://DESCRIPTION.md",
   "tagline": "Self-service Continutous Integration platform for busy development teams.",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "healthCheckPath": "/",
   "httpPort": 8080,
   "manifestVersion": 2,
